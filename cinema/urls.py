@@ -40,9 +40,9 @@ urlpatterns = [
     path("genres/<int:pk>/", GenreDetail.as_view(), name="genre-detail"),
     path("actors/", ActorList.as_view(), name="actor-list"),
     path("actors/<int:pk>/", ActorDetail.as_view(), name="actor-detail"),
-    path("cinemahalls/", cinemahall_list, name="cinema-hall-list"),
+    path("cinema_halls/", cinemahall_list, name="cinema-hall-list"),
     path(
-        "cinemahalls/<int:pk>/",
+        "cinema_halls/<int:pk>/",
         cinemahall_detail,
         name="cinema-hall-detail"
     ),
